@@ -1,0 +1,135 @@
+##list services api
+/login
+  - POST
+      Pour se créer un compte (json: username, password, name)
+  - GET 
+      Pour se connecter (json: username, passsword)
+/transaction
+  - POST 
+      Pour créer une transaction (json: label, prix, category Principal, sous catégorie)
+  - GET 
+      Pour avoir la liste des transactions c'est l'historique (json: [0: identifiant ,category_Principal, sous_category, prix, label, date ])
+  - DELETE
+      Pour delete une transaction (identifiant de la transaction a delete dans l'url >> /transaction/identifiant_transaction);
+/solde
+  - GET 
+    Pour avoir le solde total de toutes les transactions (json: soldeTotal, solde_par_category(dans un tableau))
+
+## categories:
+- Logement
+  - Loyer
+  - Assurance Habitation
+  - Charges 
+  - Decoration
+  - Eau
+  - Electricité
+  - Entretien
+  - Gaz
+  - Logement - Autre
+
+- Alimentation & Restaurant
+  - Restaurant
+  - Fast foods
+  - Supermarché / Epicerie
+  - Café
+  - Alimentatio - Autre 
+
+- Auto & Transport <br />
+  - Entretien véhicule
+  - Transport commun
+  - Carburant
+  - Location véhicule
+  - Assanrance véhicule
+  - Billet avion
+  - Billet train
+  - Péage
+  - Stationnement
+  - Auto & Transport - Autre 
+
+- Loisir & Sortie
+  - Bar / Clubs
+  - Divertussement
+  - Frais animaux
+  - Hobbies
+  - Hôtels
+  - Sport
+  - Voyage / vacance
+  - Loisir & Sortir - Autre
+
+- Achat & Shopping
+  - Cadeaux
+  - Culturel
+  - Vêtements/Chaussures
+  - High Tech
+  - Licence
+  - Achat & Shopping - Autre
+
+- Banque
+  - Incidents de paiments
+  - Frais Bancaires
+  - Débit mensuel
+  - Epargne
+  - Hypothèque 
+  - Remboursement emprunt
+  - Service Bancaire
+  - Banque - Autre
+
+- Abonnement
+  - Internet
+  - Téléphone
+  - Abonnement - Autre
+
+- Divers
+  - Tabac
+  - Assurance 
+  - Dons
+  - Divers - Autre
+
+- Santé
+  - Dentiste
+  - Mutuelle
+  - Médecin
+  - Pharmacie
+  - Opticien / Opthtalmo
+  - Santé - Autre
+
+- Dépenses pro 
+  - Compta
+  - Cotisation 
+  - Conseil
+  - Maintenance
+  - Note de Frais
+  - Marketing / Publicité
+  - Salaires
+  - Sous traitance
+  - Dépenses pro - Autre
+
+- Esthétique & soins 
+  - Coiffeur
+  - Cosmétique
+  - Esthétique
+  - Spa / Massage
+  - Esthétique & soins - Autre
+
+- Impôts & taxes 
+  - Amendes
+  - Impôts
+  - Tva
+  - Taxes
+  - Impôts & taxes - Autres
+
+- Retrait chèque & virements 
+  - chèque
+  - Retraits
+  - Virement
+  - Retrait chèque & virements - Autre
+
+- Scolarité & enfant  
+  - Baby-sitters & crèche
+  - Ecole
+  - Fourniture Scolaire
+  - Jouets
+  - Logement etudiant
+  - pensions
+  - prêt etudiant
+  - Scolarité & enfant - Autre
